@@ -1,5 +1,5 @@
 'use client';
-
+import { toast } from 'sonner';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -69,7 +69,8 @@ export default function RegisterPage() {
       const response = await api.post('/auth/register', formData);
       
       if (response.data.success) {
-        router.push('/login?registered=true');
+         toast.success('Registration successful! Please log in.');
+    router.push('/login');
       }
     } catch (error) {
       setApiError(
