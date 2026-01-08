@@ -14,7 +14,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 export default function LoginPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  
   const [formData, setFormData] = useState({
     email: '',
     password: ''
