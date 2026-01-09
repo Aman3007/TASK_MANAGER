@@ -77,7 +77,7 @@ task-manager/
     └── .env.local
 ```
 
-## Both Backend and frontend are stored in seprated repo you can clone both seprately
+## Both Backend and frontend are stored in seprated repo you can clone both seprately for the one's who wants to built frontend in React.js/vite
 ## Backend part for Task-Manager App : https://github.com/Aman3007/Task_Manager-Backend
 
 ## Installation & Setup
@@ -167,11 +167,11 @@ The frontend will run on `http://localhost:3000`
 ### Registration
 - Name: Required, non-empty
 - Email: Required, valid email format
-- Password: Minimum 8 characters, at least one uppercase letter, at least one special character
+- Password: Minimum 8 characters, at least one uppercase letter, at least one special character and at least one numeric value
 
 ### Login
 - Email: Required, valid email format
-- Password: Required
+- Password: Required, valid password format
 
 ### Tasks
 - Title: Required, non-empty
